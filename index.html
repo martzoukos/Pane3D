@@ -1,0 +1,45 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Pane3D - A Zoomable three dimensional interface jQuery plugin</title>
+  <meta name="description" content="Pane3D is a jQuery plugin that creates a zoomable three dimensional interface from a simple HTML structure.">
+  <meta property="og:site_name" content="Pane3D - A Zoomable three dimensional interface jQuery plugin">
+  <meta property="og:url" content="http://www.martzoukos.com/wp-content/uploads/misc/personal/Pane3D/index.html">
+  <meta property="og:title" content="Pane3D - A Zoomable three dimensional interface jQuery plugin">
+  <meta property="og:type" content="website">
+  <meta property='og:image' content='http://www.martzoukos.com/wp-content/uploads/sample-code.jpg'>
+  <meta property="og:description" content="Pane3D is a jQuery plugin that creates a zoomable three dimensional interface from a simple HTML structure.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+
+    
+  <div id="container" class="panes-environment">
+    <div class="panes-container">
+      <section class="pane" style="border-color: #113F8C; color: #113F8C;">Pane 1 (scroll down)</section>
+      <section class="pane" style="border-color: #01A4A4; color: #01A4A4;">Pane 2 (scroll some more)</section>
+      <section class="pane" style="border-color: #00A1CB; color: #00A1CB;">Pane 3 (you're halfway there)</section>
+      <section class="pane" style="border-color: #61AE24; color: #61AE24;">Pane 4 (one more)</section>
+      <section class="pane" style="border-color: #D0D102; color: #D0D102; line-height: 500px;">You're here! (now scroll back up)</section>
+    </div>
+  </div>
+  
+  
+  <!-- JS dependencies -->
+  <script src="js/modernizr-2.5.2.min.js"></script>
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery.pane3D.js"></script>
+  <script>
+  $(document).ready(function(){    
+    $("#container").pane3D();
+  });
+  </script>
+  
+</body>
+</html>
