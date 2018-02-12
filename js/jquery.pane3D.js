@@ -21,7 +21,7 @@ if ( Modernizr.csstransforms ) {
           scrolled  = 0,
           docHeight,
           distance3d = o.spacing,
-          levels = $panes.size() - 1, //0 based
+          levels = $panes.length - 1, //0 based
           depthPositioning = distance3d * levels,
           depth3D = (distance3d * (levels+1)),
           docHeight = depth3D,
